@@ -22,11 +22,6 @@
 
 \RequirePackage[quiet]{fontspec}
 
-\newfontfamily\bodyfont
-[BoldFont=texgyreheros-bold.otf,
-ItalicFont=texgyreheros-italic.otf,
-BoldItalicFont=texgyreheros-bolditalic.otf]
-{texgyreheros-regular.otf}
 \newfontfamily\thinfont[]{Lato-Light.ttf}
 \newfontfamily\headingfont[]{texgyreheros-bold.otf}
 
@@ -44,12 +39,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %%%%%%%%%%
 
 \RequirePackage{tikz}
-
-\newcommand{\rolefont}{%
-  \fontsize{14pt}{24pt}\selectfont%
-  \thinfont%
-  \color{white}%
-}
 
 \newcommand{\header}[2]{%
   \begin{tikzpicture}[remember picture,overlay]
@@ -77,14 +66,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \par\vspace{\parskip}
 }
 
-\renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
-  {%
-  \large\headingfont\color{headercolor} #1%
-  }
-  \par\vspace{.25\parskip}%
-}
-
 \pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%
@@ -97,7 +78,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }{%
   \end{tabular*}
 }
-\renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
@@ -133,4 +113,3 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
-\RequirePackage{hyperref}
