@@ -2,6 +2,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \LoadClass{article}
 
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+
 %%%%%%%%%%
 % Colors %
 %%%%%%%%%%
@@ -22,10 +24,10 @@
 
 \RequirePackage[quiet]{fontspec}
 
-\newfontfamily\thinfont[]{Lato-Light.ttf}
+\newfontfamily\thinfont[]{Lato-Light.ttf} % for name on top (otherwise looks too thick)
 \newfontfamily\headingfont[]{texgyreheros-bold.otf}
 
-\defaultfontfeatures{Mapping=tex-text}
+%\defaultfontfeatures{Mapping=tex-text}
 \setmainfont
 [Mapping=tex-text, Color=textcolor,
 BoldFont=texgyreheros-bold.otf,
@@ -107,9 +109,3 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \end{textblock}
   \let\section\oldsection
 }
-
-%%%%%%%%%%%%%%%%
-% Other tweaks %
-%%%%%%%%%%%%%%%%
-
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
