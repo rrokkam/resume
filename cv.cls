@@ -1,13 +1,6 @@
 \ProvidesClass{cv}
 \NeedsTeXFormat{LaTeX2e}
-
-\DeclareOption{print}{\def\@cv@print{}}
-\DeclareOption*{%
-  \PassOptionsToClass{\CurrentOption}{article}%
-}
-\ProcessOptions\relax
 \LoadClass{article}
-
 
 %%%%%%%%%%
 % Colors %
@@ -16,29 +9,10 @@
 \RequirePackage{xcolor}
 
 \definecolor{white}{RGB}{255,255,255}
-
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{lightgray}{HTML}{999999}
-
-\definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{FDA333}
-\definecolor{purple}{HTML}{D3A4F9}
-\definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
-
-\ifdefined\@cv@print
-  \colorlet{green}{gray}
-  \colorlet{orange}{gray}
-  \colorlet{purple}{gray}
-  \colorlet{red}{gray}
-  \colorlet{blue}{gray}
-  \colorlet{fillheader}{white}
-  \colorlet{header}{gray}
-\else
-  \colorlet{fillheader}{gray}
-  \colorlet{header}{white}
-\fi
+\colorlet{fillheader}{gray}
+\colorlet{header}{white}
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
 
@@ -65,9 +39,6 @@ ItalicFont=texgyreheros-italic.otf,
 BoldItalicFont=texgyreheros-bolditalic.otf
 ]
 {texgyreheros-regular.otf}
-
-\setmathfont{texgyreheros-regular.otf}
-%%%
 
 %%%%%%%%%%
 % Header %
@@ -97,33 +68,15 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \vspace{-2\parskip}
 }
 
-
 %%%%%%%%%%%%%
 % Structure %
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
 
-\newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
-  {%
-    \color{%
-      \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\else%
-        headercolor\fi%
-    } #1#2#3%
-  }%
-  \stepcounter{colorCounter}%
-}
-
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
-    \@sectioncolor #1%
+    \LARGE\headingfont\color{headercolor} #1%
   }
   \par\vspace{\parskip}
 }
@@ -137,7 +90,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \pagestyle{empty}
-
 
 %%%%%%%%%%%%%%%%%%%%
 % List environment %
@@ -157,7 +109,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
-
 
 %%%%%%%%%%%%%%
 % Side block %
@@ -180,7 +131,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \end{textblock}
   \let\section\oldsection
 }
-
 
 %%%%%%%%%%%%%%%%
 % Other tweaks %
