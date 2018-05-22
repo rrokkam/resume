@@ -22,12 +22,12 @@
 
 \newfontfamily\thinfont[]{Lato-Light.ttf} % for name on top (otherwise looks too thick)
 
-\setmainfont
-[Mapping=tex-text, Color=primary,
-BoldFont=texgyreheros-bold.otf,
-ItalicFont=texgyreheros-italic.otf
-]
-{texgyreheros-regular.otf}
+\setmainfont{texgyre}
+% [Mapping=tex-text, Color=primary,
+% BoldFont=texgyreheros-bold.otf,
+% ItalicFont=texgyreheros-italic.otf
+% ]
+% {texgyreheros-regular.otf}
 
 %%%%%%%%%%
 % Header %
