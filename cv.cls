@@ -2,6 +2,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \LoadClass{article}
 
+\pagestyle{empty}
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 
 %%%%%%%%%%
@@ -10,13 +11,8 @@
 
 \RequirePackage{xcolor}
 
-\definecolor{white}{RGB}{255,255,255}
-\definecolor{darkgray}{HTML}{333333}
-\definecolor{gray}{HTML}{4D4D4D}
-\colorlet{fillheader}{gray}
-\colorlet{header}{white}
-\colorlet{textcolor}{gray}
-\colorlet{headercolor}{gray}
+\definecolor{primary}{HTML}{333333} % dark gray
+\definecolor{secondary}{RGB}{255,255,255} % white
 
 %%%%%%%%%
 % Fonts %
@@ -25,14 +21,11 @@
 \RequirePackage[quiet]{fontspec}
 
 \newfontfamily\thinfont[]{Lato-Light.ttf} % for name on top (otherwise looks too thick)
-\newfontfamily\headingfont[]{texgyreheros-bold.otf}
 
-%\defaultfontfeatures{Mapping=tex-text}
 \setmainfont
-[Mapping=tex-text, Color=textcolor,
+[Mapping=tex-text, Color=primary,
 BoldFont=texgyreheros-bold.otf,
-ItalicFont=texgyreheros-italic.otf,
-BoldItalicFont=texgyreheros-bolditalic.otf
+ItalicFont=texgyreheros-italic.otf
 ]
 {texgyreheros-regular.otf}
 
@@ -42,11 +35,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \RequirePackage{tikz}
 
-\newcommand{\header}[2]{%
+\newcommand{\header}[1]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
+    \node [rectangle, fill=primary, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{header}%
+      \fontsize{40pt}{72pt}\color{secondary}%
       {\thinfont #1}
     };
   \end{tikzpicture}
@@ -63,12 +56,10 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor} #1%
+    \LARGE\color{primary}\textbf{#1}%
   }
   \par\vspace{\parskip}
 }
-
-\pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%
 % List environment %
@@ -98,7 +89,10 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+    \par\vspace{\baselineskip}
+    {%
+      \Large\color{primary}\textbf{##1}%
+    }
   }
   \begin{textblock}{3.6}(1.5, 4.33)
   \begin{flushright}
