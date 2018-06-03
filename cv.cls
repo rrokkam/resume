@@ -24,11 +24,12 @@
 
 \setmainfont
 [Mapping=tex-text, Color=primary,
-BoldFont=Lato-SemiBold.ttf,
-ItalicFont=Lato-LightItalic.ttf,
-BoldItalicFont=Lato-SemiBoldItalic.ttf
+BoldFont=Lato-Bold.ttf,
+ItalicFont=Lato-Italic.ttf,
+BoldItalicFont=Lato-BoldItalic.ttf
 ]
-{Lato-Light.ttf}
+{Lato-Regular.ttf}
+
 
 %%%%%%%%%%
 % Header %
@@ -76,7 +77,7 @@ BoldItalicFont=Lato-SemiBoldItalic.ttf
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=gray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
 
