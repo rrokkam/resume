@@ -24,10 +24,11 @@
 
 \setmainfont
 [Mapping=tex-text, Color=primary,
-BoldFont=texgyreheros-bold.otf,
-ItalicFont=texgyreheros-italic.otf
+BoldFont=Lato-SemiBold.ttf,
+ItalicFont=Lato-LightItalic.ttf,
+BoldItalicFont=Lato-SemiBoldItalic.ttf
 ]
-{texgyreheros-regular.otf}
+{Lato-Light.ttf}
 
 %%%%%%%%%%
 % Header %
