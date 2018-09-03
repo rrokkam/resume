@@ -1,7 +1,6 @@
-cv.pdf
-cv.aux
-cv.bcf
-cv.out
-cv.run.xml
-cv.log
+*.aux
+*.bcf
+*.out
+*.run.xml
+*.log
 .DS_Store
