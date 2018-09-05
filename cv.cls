@@ -80,7 +80,7 @@ BoldItalicFont=Lato-BoldItalic.ttf
   \end{tabular*}
 }
 \newcommand{\entry}[3]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{12.5cm}{%
     \textbf{#2}\\%
     #3\vspace{\parsep}%
   }\\}
