@@ -19,7 +19,7 @@
 
 \section{interests}
 
-concurrent data structures, high-performance computing, algorithm design
+algorithm design, high-performance computing, concurrent data structures
 
 \section{experience}
 
@@ -32,19 +32,19 @@ concurrent data structures, high-performance computing, algorithm design
 
 \begin{entrylist}
   \entry{2018}{Peer-to-peer Filesystem}
-    {A distributed filesystem written in Python using the FUSE library, using a bootstrap server to host.}
+    {A distributed filesystem written in Python using the FUSE library, using a multithreaded bootstrap server to host. Mountable on Linux and MacOS.}
   \entry{2018}{Terminal Chat Service}
-    {A terminal chat client in C and multithreaded server in Python. Sends messages using a custom plaintext protocol.}
+    {A terminal chat client in C and multithreaded server in Python. Messages are sent using a custom plaintext protocol.}
   \entry{2018}{Packet Sniffer}
-    {A packet sniffer implemented using Python's raw sockets. Dumps packets to human-readable, hex, or pcap (Wireshark-readable) forms.}
+    {A packet sniffer implemented using Python's raw sockets. Dumps packets to human-readable, hex, or pcapng (Wireshark-readable) forms as desired. Optionally filters packets by protocol.}
   \entry{2017}{Dynamic Memory Allocation Library}
-    {A memory allocator written in C, using a segmented free-list and first-fit allocation policy.}
+    {A memory allocator developed in C, using a first-fit allocation policy. Stores free blocks with a variable-size segmented free-list. Borrows several optimizations from glibc's malloc, such as use of a wilderness block.}
   \entry{2017}{Shell}
-    {A shell written in C with bash-like output redirection and job control.}
+    {A shell written in C with bash-like features, including output redirection, piping, and job control.}
   \entry{2017}{Memcached Clone}
     {An in-memory caching service in C, implemented using a custom multithreading-safe queue and hashmap.}
   \entry{2016}{Navigation System}
-    {A GPS developed in Java using data from OpenStreetMap and an XML parser. Implements Djikstra's shortest-path algorithm to calculate routes.}
+    {A GPS developed in Java using the OpenStreetMap API and an XML parser. Implements Djikstra's shortest-path algorithm to compute shortest routes.}
 \end{entrylist}
 
 \section{teaching}
