@@ -3,7 +3,7 @@
 \LoadClass{article}
 
 \pagestyle{empty}
-\RequirePackage[left=6.3cm,top=2.5cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.3cm,top=2.5cm,right=1.5cm,bottom=1cm,nohead,nofoot]{geometry}
 
 %%%%%%%%%%
 % Colors %
@@ -80,7 +80,7 @@ BoldItalicFont=Lato-BoldItalic.ttf
   \end{tabular*}
 }
 \newcommand{\entry}[3]{%
-  #1&\parbox[t]{12.5cm}{%
+  #1&\parbox[t]{12cm}{%
     \textbf{#2}\\%
     #3\vspace{\parsep}%
   }\\}

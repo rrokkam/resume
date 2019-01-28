@@ -3,4 +3,6 @@
 *.out
 *.run.xml
 *.log
+*.fls
+*.fdb_latexmk
 .DS_Store
