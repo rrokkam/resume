@@ -12,7 +12,7 @@
 \RequirePackage{xcolor}
 
 \definecolor{primary}{HTML}{333333} % dark gray
-\definecolor{secondary}{RGB}{255,255,255} % white
+\definecolor{secondary}{HTML}{FFFFFF} % white
 
 %%%%%%%%%
 % Fonts %
@@ -39,13 +39,12 @@ BoldItalicFont=Lato-BoldItalic.ttf
 
 \newcommand{\header}[1]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=secondary, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
+    \node [rectangle, fill=secondary, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=north] (name) at (box) {%
-      \fontsize{36pt}{48pt}\color{primary}%
+      \fontsize{30pt}{36pt}\color{primary}%
       {\headerfont #1}
     };
   \end{tikzpicture}
-  \rule{\textwidth}{0.4pt}
 }
 
 %%%%%%%%%%%%%
@@ -61,11 +60,10 @@ BoldItalicFont=Lato-BoldItalic.ttf
 }
 
 \renewcommand{\section}[1]{
-%  \divider
   \par\vspace{\parskip}
   {%
-    \LARGE\color{primary}\textbf{#1}%
-  }
+    \Large\color{primary}\textbf{#1}%
+  }%
   \par\vspace{\parskip}
 }
 
@@ -84,28 +82,3 @@ BoldItalicFont=Lato-BoldItalic.ttf
     \textbf{#2}\\%
     #3\vspace{\parsep}%
   }\\}
-
-%%%%%%%%%%%%%%
-% Side block %
-%%%%%%%%%%%%%%
-
-\RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1cm}
-\setlength{\TPVertModule}{1cm}
-\newenvironment{aside}{%
-  \let\oldsection\section
-  \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}
-    {%
-      \Large\color{primary}\textbf{##1}%
-    }
-  }
-  \begin{textblock}{4.1}(1.5, 4.33)
-  \begin{flushright}
-  \obeycr
-}{%
-  \restorecr
-  \end{flushright}
-  \end{textblock}
-  \let\section\oldsection
-}
