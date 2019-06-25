@@ -4,55 +4,68 @@
 \begin{document}
 \header{Rohith Rokkam}
 
-\begin{aside}
-  \section{education}
+%\begin{aside}
+%  \section{education}
+%    Stony Brook University
+%    B.S. in Math, Computer Science (Honors)
+%    Summa Cum Laude
+%    graduated Spring 2019
+%  \section{contact}
+%    rohithrokkam@yahoo.com
+%    (516) 506-1196
+%    github.com/rrokkam
+%\end{aside}
+
+%\section{interests}
+%
+%algorithms, discrete math, probability, high-performance computing, data structures, concurrency
+%
+
+\section{my education}
+
+\begin{entrylist}
     Stony Brook University
-    B.S. Comp. Sci., Math
-    Honors Computer Science
-    GPA: 3.9
-    graduation: spring 2019
-  \section{contact}
+    B.S. in Math, Computer Science (Honors)
+    Summa Cum Laude
+    graduated Spring 2019
     rohithrokkam@yahoo.com
     (516) 506-1196
     github.com/rrokkam
-\end{aside}
-
-\section{interests}
-
-algorithm design, high-performance computing, concurrent data structures
-
-\section{experience}
-
-\begin{entrylist}
-  \entry{2018-19}{Center for Computing Research, Sandia National Labs, Albuquerque, NM}
-    {As an intern, Contributed to parallelization facilities for PEBBL, a MPI-based C++ framework for solving branch-and-bound problems. 
-    Paper titled ``The Implementation of Parallel Bounding in PEBBL'' forthcoming in the Sandia Intern Proceedings.}
 \end{entrylist}
 
-\section{projects}
+\section{my experience}
+
+\begin{entrylist}
+  \entry{2019-}{Stony Brook Algorithms Lab}
+    {discuss algorithms + learn, present.}
+  \entry{2018-19}{Center for Computing Research, Sandia National Labs}
+    {Contributed to parallelization facilities for PEBBL, a C++ framework for solving branch-and-bound problems. Wrote dynamic MPI code with a focus on minimizing communication overhead and maintaining legacy compatibility.}
+\end{entrylist}
+
+%algos reading group? Go club?
+
+\section{my projects}
 
 \begin{entrylist}
   \entry{2018}{Peer-to-peer Filesystem}
-    {A distributed filesystem similar to Airdrop, written using the Python bindings for the FUSE library. The P2P network is hosted by a multithreaded bootstrap server. Mountable on Linux and MacOS.}
+    {A distributed filesystem similar to Airdrop, written using the FUSE bindings for Python. The P2P network is hosted by a multithreaded bootstrap server. Mountable on Linux and MacOS.}
   \entry{2018}{Terminal Chat Service}
-    {A terminal chat client in C and multithreaded server in Python. Messages are sent using a custom plaintext protocol.}
+    {A terminal chat client in C with a concurrent server written in Python. Sends messages using a custom plaintext protocol.}
   \entry{2018}{Packet Sniffer}
-    {A packet sniffer implemented using Python's raw sockets. Dumps packets to human-readable, hex, or pcapng (Wireshark-readable) formats as desired. Optionally filters packets by protocol.}
+    {A packet sniffer implemented using raw sockets in Python. Dumps packets to human-readable, hex, or pcapng (Wireshark-readable) formats as desired. Optionally filters packets by protocol.}
   \entry{2017}{Dynamic Memory Allocation Library}
-    {A memory allocator developed in C, using a first-fit allocation policy. Stores free blocks with a variable-size segmented free-list. Borrows several optimizations from glibc's malloc, such as use of a wilderness block.}
+    {A memory allocator developed in C, using a first-fit allocation policy. Stores free blocks with a variable-size segmented free-list. Implements several optimizations found in glibc malloc, such as use of a wilderness block.}
   \entry{2017}{Shell}
-    {A shell written in C with bash-like features, including output redirection, piping, and job control.}
-  \entry{2017}{Memcached Clone}
-    {An in-memory caching service in C, implemented using a custom multithreading-safe queue and hashmap.}
+    {A shell written in C with bash-like features, including output redirection, piping, and background jobs. Carefully implements UNIX signal handling and manages the life cycle of spawned processes.}
   \entry{2016}{Navigation System}
-    {A Google Maps-like application developed in Java using the OpenStreetMap API and an XML parser. Implements Djikstra's shortest-path algorithm to compute shortest routes.}
+    {A Google Maps-like application developed in Java using the OpenStreetMap API and an XML parser, using a custom implementation of Djikstra's shortest-path algorithm for route computation.}
 \end{entrylist}
 
-\section{teaching}
+\section{my teaching}
 
 \begin{entrylist}
-  \entry{2018-19}{Teaching Assistant: Theory of Computation}
-    {Wrote \& graded homework on finite automata, formal languages, and Turing machines. Also taught as a substitute.}
+  \entry{2018, 19}{Teaching Assistant: Theory of Computation}
+    {Wrote \& graded homework and exams on finite automata, formal languages, Turing machines, and complexity theory.}
   \entry{2017}{Teaching Assistant: Foundations of Computer Science}
     {Instructed 20-person recitation section on discrete math, logic, and proof techniques.}
 \end{entrylist}

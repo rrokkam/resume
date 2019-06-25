@@ -3,7 +3,7 @@
 \LoadClass{article}
 
 \pagestyle{empty}
-\RequirePackage[left=6.3cm,top=2.5cm,right=1.5cm,bottom=1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 
 %%%%%%%%%%
 % Colors %
@@ -41,7 +41,7 @@ BoldItalicFont=Lato-BoldItalic.ttf
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=secondary, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
     \node [anchor=north] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{primary}%
+      \fontsize{36pt}{48pt}\color{primary}%
       {\headerfont #1}
     };
   \end{tikzpicture}
@@ -80,7 +80,7 @@ BoldItalicFont=Lato-BoldItalic.ttf
   \end{tabular*}
 }
 \newcommand{\entry}[3]{%
-  #1&\parbox[t]{12cm}{%
+  #1&\parbox[t]{15cm}{%
     \textbf{#2}\\%
     #3\vspace{\parsep}%
   }\\}
