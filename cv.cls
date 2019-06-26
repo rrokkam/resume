@@ -36,17 +36,11 @@
 
 % Structure
 \RequirePackage{parskip}
-
-\renewcommand{\section}[1]{
-  \smallskip{\Large\color{primary}\textbf{#1}}\smallskip
-}
-
-
-% List environment
 \RequirePackage{enumitem}
 \setlength{\tabcolsep}{0pt}
 
-\newenvironment{entrylist}{%
+\newenvironment{entrylist}[1]{%
+  \smallskip{\Large\color{primary}\textbf{#1}}\smallskip \\
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
@@ -58,12 +52,13 @@
     #3\vspace{\parsep}%
   }\\}
 
-\newcommand{\entryy}[3]{%
+\newcommand{\entryy}[4]{%
   #1&\parbox[t]{14cm}{%
-  \textbf{#2}\\%
-  \vspace{-3.5mm}%
+  \textbf{#2}%
+  \hfill\textbf{#3}%
+  \vspace{0.5\parsep}%
   \begin{itemize}[noitemsep,topsep=0pt]%
-  #3%
+  #4%
   \end{itemize}%
   \vspace{\parsep}%
 }\\}
