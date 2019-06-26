@@ -15,47 +15,77 @@ rohithrokkam@yahoo.com; (516)506-1196; github.com/rrokkam
 % Work these into the bullet lists below
 %algorithms, discrete math, probability, high-performance computing, data structures, concurrency
 
-\begin{entrylist}{experience}
-  \entry{06/18 - 06/19}{Research and Development Intern, Center for Computing Research, Sandia National Labs}
-    {Contributed to parallelization facilities for PEBBL, a C++ framework for solving branch-and-bound problems. Wrote dynamic MPI code with a focus on minimizing communication overhead and maintaining legacy compatibility.}
-    \entry{01/19 -}{Member, Stony Brook Algorithms Lab}
-    {Discuss research topics in the theory of computer science. We read papers on topics related to the theory of computer science and present the topics to one another.}
-\end{entrylist}
+\begin{cvsection}{experience}
+  \entry{06/18 - 06/19}{Research and Development Intern}{Sandia National Labs}
+  {
+    \item Contributed to parallelization facilities for PEBBL, a C++ framework for solving branch-and-bound problems. 
+    \item Wrote dynamic MPI code with a focus on minimizing communication overhead and maintaining legacy compatibility.
+  }
+  \entry{01/19 -}{Member}{Stony Brook Algorithms Lab}
+  {
+    \item Discuss research topics in the theory of computer science.
+    \item We read papers on topics related to the theory of computer science and present the topics to one another.
+   }
+\end{cvsection}
 
-\begin{entrylist}{projects}
-  \entryy{Fall 2018}{Canvassing Application}{}
+\begin{cvsection}{projects}
+  \entry{Fall 2018}{Canvassing Application}{}
   {
     \item A web app written in JavaScript and Python for managing door-to-door campaigns. 
     \item Interface with Google VRP solver
     \item Information stored using MongoDB
     \item Group project, worked mostly on the backend, query writing. say microservice
   }
-  \entry{Spring 2018}{Peer-to-peer Filesystem}
-    {Written using the FUSE bindings for Python. The P2P network is hosted by a multithreaded bootstrap server and runs over a custom protocol. Functionality similar to Airdrop. Mountable on Linux and MacOS.}
-  \entry{Spring 2018}{Packet Sniffer}
-    {Implemented using raw sockets in Python. Dumps packets to human-readable, hex, or pcapng (Wireshark-readable) formats as desired. Optionally filters packets by protocol.}
-  \entry{Fall 2017}{Dynamic Memory Allocator}
-    {Developed in C, using a first-fit allocation policy. Stores free blocks with a variable-size segmented free-list. Implements several optimizations found in glibc malloc, such as use of a wilderness block.}
-  \entry{Fall 2017}{Shell}
-    {A shell written in C with bash-like features, including output redirection, piping, and background jobs. Carefully implements UNIX signal handling and manages the life cycle of spawned processes.}
-  \entry{Fall 2016}{Navigation System}
-    {A Google Maps-like application developed in Java using the OpenStreetMap API and an XML parser, using a custom implementation of Djikstra's shortest-path algorithm for route computation.}
-\end{entrylist}
-
-\begin{entrylist}{teaching}
-  \entry{Spring 2018/19}{Teaching Assistant: Theory of Computation}
-    {Wrote \& graded homework and exams on finite automata, formal languages, Turing machines, and complexity theory.}
-  \entry{Spring 2017}{Teaching Assistant: Foundations of Computer Science}
-    {Instructed 20-person recitation section on discrete math, logic, and proof techniques.}
-\end{entrylist}
-
-\begin{entrylist}{personal}
-  \entry{Fall 2017 - Spring 2019}{Stony Brook Go Club}
-  {Secretary, dc trip, gotham
+  \entry{Spring 2018}{Peer-to-peer Filesystem}{}
+  {
+    \item Written using the FUSE bindings for Python. 
+    \item P2P network hosted by a multithreaded bootstrap server. Runs over a custom protocol.
+    \item Functionality similar to Airdrop. Mountable on Linux and MacOS.
   }
-  \entry{Fall 2017 - Spring 2018}{SBU Undergrad Algorithms Reading Group}
-  {Present algorithms and data structures of interest.
+  \entry{Spring 2018}{Packet Sniffer}{}
+  {
+    \item Implemented using raw sockets in Python. 
+    \item Dumps packets to human-readable, hex, or pcapng (Wireshark-readable) formats as desired. 
+    \item Optionally filters packets by protocol.
+  }
+  \entry{Fall 2017}{Dynamic Memory Allocator}{}
+  {
+    \item Developed in C, using a first-fit allocation policy.
+    \item Stores free blocks with a variable-size segmented free-list.
+    \item Implements some optimizations from glibc malloc, ex: wilderness block.
+  }
+  \entry{Fall 2017}{Shell}{}
+  {
+    \item Written in C with bash-like features and syntax, including output redirection, piping, and background jobs. 
+    \item Carefully implements UNIX signal handling and process life-cycle management.
+  }
+  \entry{Fall 2016}{Navigation System}{}
+  {
+    \item Developed in Java using the OpenStreetMap API and an XML parser, with functionality similar to Google Maps.
+    \item Wrote a custom implementation of Djikstra's shortest-path algorithm for directions.
+  }
+\end{cvsection}
+
+\begin{cvsection}{teaching}
+  \entry{Spring 2018/19}{Teaching Assistant}{Theory of Computation}
+  {
+    \item Wrote \& graded homework and exams on finite automata, formal languages, Turing machines, and complexity theory.
+  }
+  \entry{Spring 2017}{Teaching Assistant}{Foundations of Computer Science}
+  {
+    \item Instructed 20-person recitation section on discrete math, logic, and proof techniques.
+  }
+\end{cvsection}
+
+\begin{cvsection}{personal}
+  \entry{Fall 2017 - Spr. 2019}{Member, Secretary}{Stony Brook Go Club}
+  {
+    \item secretary, dc trip, gotham
+  }
+  \entry{Fall 2017 - Spr. 2018}{Member}{SBU Undergrad Algorithms Reading Group}
+  {
+    \item Present algorithms and data structures of interest.
   } 
-\end{entrylist}
+\end{cvsection}
 
 \end{document}

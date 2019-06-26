@@ -39,20 +39,14 @@
 \RequirePackage{enumitem}
 \setlength{\tabcolsep}{0pt}
 
-\newenvironment{entrylist}[1]{%
+\newenvironment{cvsection}[1]{%
   \smallskip{\Large\color{primary}\textbf{#1}}\smallskip \\
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
 }
 
-\newcommand{\entry}[3]{%
-  #1&\parbox[t]{14cm}{%
-    \textbf{#2}\\%
-    #3\vspace{\parsep}%
-  }\\}
-
-\newcommand{\entryy}[4]{%
+\newcommand{\entry}[4]{%
   #1&\parbox[t]{14cm}{%
   \textbf{#2}%
   \hfill\textbf{#3}%
