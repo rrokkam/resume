@@ -43,6 +43,7 @@
 
 
 % List environment
+\RequirePackage{enumitem}
 \setlength{\tabcolsep}{0pt}
 
 \newenvironment{entrylist}{%
@@ -56,3 +57,13 @@
     \textbf{#2}\\%
     #3\vspace{\parsep}%
   }\\}
+
+\newcommand{\entryy}[3]{%
+  #1&\parbox[t]{14cm}{%
+  \textbf{#2}\\%
+  \vspace{-3.5mm}%
+  \begin{itemize}[noitemsep,topsep=0pt]%
+  #3%
+  \end{itemize}%
+  \vspace{\parsep}%
+}\\}
