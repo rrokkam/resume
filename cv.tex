@@ -2,56 +2,48 @@
 \documentclass{cv}
 
 \begin{document}
-\header{Rohith Rokkam}
-\rule{\textwidth}{0.4pt}
-\begin{center}
-B.S. Computer Science (Honors) and Mathematics, Summa Cum Laude \\
-Stony Brook University, Spring 2019
+\header{Rohith Rokkam}{
+  B.S. Computer Science (Honors) and Mathematics, Summa Cum Laude \\
+  Stony Brook University, Spring 2019
 
-rohithrokkam@yahoo.com; (516)506-1196; github.com/rrokkam 
-
-\end{center}
-
-% Work these into the bullet lists below
-%algorithms, discrete math, probability, high-performance computing, data structures, concurrency
+  rohithrokkam@yahoo.com; (516)506-1196; github.com/rrokkam
+}
 
 \begin{cvsection}{experience}
   \entry{06/18 - 06/19}{Research and Development Intern}{Sandia National Labs}
   {
-    \item Contributed to parallelization facilities for PEBBL, a C++ framework for solving branch-and-bound problems. 
+    \item Contributed to parallelization facilities for PEBBL, a C++ branch-and-bound framework. CCR
     \item Wrote dynamic MPI code with a focus on minimizing communication overhead and maintaining legacy compatibility.
   }
-  \entry{01/19 -}{Member}{Stony Brook Algorithms Lab}
-  {
-    \item Discuss research topics in the theory of computer science.
-    \item We read papers on topics related to the theory of computer science and present the topics to one another.
+   \entry{Spring 2018/19}{Teaching Assistant}{Theory of Computation}
+   {
+     \item Wrote \& graded homework and exams on finite automata, formal languages, Turing machines, and complexity theory.
+   }
+   \entry{Spring 2017}{Teaching Assistant}{Foundations of Computer Science}
+   {
+     \item Instructed 20-person recitation section on discrete math, logic, and proof techniques.
    }
 \end{cvsection}
 
 \begin{cvsection}{projects}
   \entry{Fall 2018}{Canvassing Application}{}
   {
-    \item A web app written in JavaScript and Python for managing door-to-door campaigns. 
-    \item Interface with Google VRP solver
-    \item Information stored using MongoDB
-    \item Group project, worked mostly on the backend, query writing. say microservice
+    \item Collaborated to build a JavaScript web app for managing door-to-door campaigns.
+    \item Made a microservice in Python using MongoDB and Google's OR-Tools.
   }
   \entry{Spring 2018}{Peer-to-peer Filesystem}{}
   {
-    \item Written using the FUSE bindings for Python. 
-    \item P2P network hosted by a multithreaded bootstrap server. Runs over a custom protocol.
-    \item Functionality similar to Airdrop. Mountable on Linux and MacOS.
+    \item Wrote an Airdrop-like P2P service for Linux and MacOS using Python's FUSE bindings.
+    \item Designed a custom protocol and multithreaded bootstrap server to host the network.
   }
   \entry{Spring 2018}{Packet Sniffer}{}
   {
-    \item Implemented using raw sockets in Python. 
-    \item Dumps packets to human-readable, hex, or pcapng (Wireshark-readable) formats as desired. 
-    \item Optionally filters packets by protocol.
+    \item Implemented a packet sniffer using raw sockets in Python. 
+    \item Writes packets in human-readable, hex, or pcapng (Wireshark-readable) formats, and can filter by protocol.
   }
   \entry{Fall 2017}{Dynamic Memory Allocator}{}
   {
-    \item Developed in C, using a first-fit allocation policy.
-    \item Stores free blocks with a variable-size segmented free-list.
+    \item Developed a malloc library in C, using first-fit allocation with a segmented free-list.
     \item Implements some optimizations from glibc malloc, ex: wilderness block.
   }
   \entry{Fall 2017}{Shell}{}
@@ -66,23 +58,18 @@ rohithrokkam@yahoo.com; (516)506-1196; github.com/rrokkam
   }
 \end{cvsection}
 
-\begin{cvsection}{teaching}
-  \entry{Spring 2018/19}{Teaching Assistant}{Theory of Computation}
+\begin{cvsection}{organizations}
+  \entry{01/19 -}{SBU Algorithms Lab}{}
   {
-    \item Wrote \& graded homework and exams on finite automata, formal languages, Turing machines, and complexity theory.
+    \item Discuss research topics in the theory of computer science.
+    \item We read papers on topics related to the theory of computer science and present the topics to one another.
+    \item algorithms, discrete math, probability, high-performance computing, data structures, concurrency
   }
-  \entry{Spring 2017}{Teaching Assistant}{Foundations of Computer Science}
-  {
-    \item Instructed 20-person recitation section on discrete math, logic, and proof techniques.
-  }
-\end{cvsection}
-
-\begin{cvsection}{personal}
-  \entry{Fall 2017 - Spr. 2019}{Member, Secretary}{Stony Brook Go Club}
+  \entry{Fall 2017 - Spr. 2019}{SBU Go Club}{}
   {
     \item secretary, dc trip, gotham
   }
-  \entry{Fall 2017 - Spr. 2018}{Member}{SBU Undergrad Algorithms Reading Group}
+  \entry{Fall 2017 - Spr. 2018}{SBU Undergrad Algorithms Reading Group}{}
   {
     \item Present algorithms and data structures of interest.
   } 

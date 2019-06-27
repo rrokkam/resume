@@ -3,7 +3,7 @@
 \LoadClass{article}
 
 \pagestyle{empty}
-\RequirePackage[left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.5cm,top=1.6cm,right=2.5cm,bottom=1.6cm,nohead,nofoot]{geometry}
 
 
 % Color
@@ -21,16 +21,13 @@
 
 
 % Header
-\RequirePackage{tikz}
-
-\newcommand{\header}[1]{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=secondary, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
-    \node [anchor=north] (name) at (box) {%
-      \fontsize{30pt}{36pt}\color{primary}%
-      {\headerfont #1}
-    };
-  \end{tikzpicture}
+\newcommand{\header}[2]{%
+  \begin{center}%
+  \fontsize{30pt}{36pt}\color{primary}%
+      {\headerfont #1} \\
+  \rule{\textwidth}{0.4pt}%
+  #2
+  \end{center}%
 }
 
 
@@ -40,7 +37,7 @@
 \setlength{\tabcolsep}{0pt}
 
 \newenvironment{cvsection}[1]{%
-  \smallskip{\Large\color{primary}\textbf{#1}}\smallskip \\
+  {\Large\color{primary}\textbf{#1}}\smallskip \\
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
@@ -50,7 +47,6 @@
   #1&\parbox[t]{14cm}{%
   \textbf{#2}%
   \hfill\textbf{#3}%
-  \vspace{0.5\parsep}%
   \begin{itemize}[noitemsep,topsep=0pt]%
   #4%
   \end{itemize}%
