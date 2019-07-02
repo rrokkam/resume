@@ -44,6 +44,16 @@
 }
 
 \newcommand{\entry}[4]{%
+  \textbf{#2} #1 \textbf{#3}\\
+  \begin{minipage}{\textwidth}
+  \begin{itemize}[noitemsep,topsep=0pt]%
+  #4%
+  \end{itemize}%
+  \end{minipage}%
+  \vspace{\parsep}\\
+}
+
+\newcommand{\entryy}[4]{%
   #1&\parbox[t]{14cm}{%
   \textbf{#2}%
   \hfill\textbf{#3}%
