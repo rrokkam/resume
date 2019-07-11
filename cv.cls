@@ -9,7 +9,7 @@
 % Color
 \RequirePackage{xcolor}
 
-\definecolor{primary}{HTML}{333333} % dark gray
+\definecolor{primary}{HTML}{222222} % dark gray
 \definecolor{secondary}{HTML}{FFFFFF} % white
 
 
