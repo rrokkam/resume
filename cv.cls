@@ -36,8 +36,12 @@
 \RequirePackage{enumitem}
 \setlength{\tabcolsep}{0pt}
 
-\newenvironment{cvsection}[1]{%
+\newcommand{\cvsectionheader}[1]{%
   {\Large\color{primary}\textbf{#1}}\smallskip \\
+}
+
+\newenvironment{cvsection}[1]{%
+  \cvsectionheader{#1}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
@@ -53,13 +57,3 @@
   \end{minipage}%
   \vspace{\parsep}\\
 }
-
-\newcommand{\entryy}[4]{%
-  #1&\parbox[t]{14cm}{%
-  \textbf{#2}%
-  \hfill\textbf{#3}%
-  \begin{itemize}[noitemsep,topsep=0pt]%
-  #4%
-  \end{itemize}%
-  \vspace{\parsep}%
-}\\}
