@@ -23,11 +23,13 @@
 % Header
 \newcommand{\header}[2]{%
   \begin{center}%
-  \fontsize{30pt}{36pt}\color{primary}%
+  \fontsize{26pt}{32pt}\color{primary}%
       {\headerfont #1} \\
+  \vspace{-0.1cm}
   \rule{\textwidth}{0.4pt}%
   #2
   \end{center}%
+  \vspace{-0.2cm}
 }
 
 
@@ -45,6 +47,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
+  \vspace{-.15cm}
 }
 
 % need to shift in the entry headers a bit from the lhs of the page
