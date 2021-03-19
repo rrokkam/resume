@@ -46,8 +46,7 @@
   \cvsectionheader{#1}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-  \end{tabular*}
-  \vspace{-.15cm}
+  \end{tabular*}%
 }
 
 % need to shift in the entry headers a bit from the lhs of the page
