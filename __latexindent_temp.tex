@@ -10,24 +10,19 @@
 }
 
 \begin{cvsection}{Experience}
-  \entry{Software Engineering MTS @ Tableau (Salesforce)}{01/20 - Present}
+  \entry{Software Engineering MTS @ Tableau (Salesforce), VizQL Server}{01/20 - Present}
   {
-    \item Flink / ODP
-    \item ART
-    \item Error codes
+    \item Used Apache Flink and Kafka to read logs and track errors in Snowflake for use in Tableau visualizations on service health.
+    \item Contributed to ART, Tableau's tracing and resource allocation tracking framework for C++ and Java.
+    \item [current project] Improving the use of error codes and error sources for exceptions across the Tableau codebase to track causes of customer dissatisfaction and reduce MTTR for SLA-impacting issues.
     \item Availability + triaging
-    \item monitoring maturity with Splunk Tableau
-    \item Healthcheck
+    \item Created Tableau and Splunk dashboards to track frequent errors and drive to three nines of availability for visualization loads in Tableau Online.
+    \item Unified and improved VizQL Server healthchecks.
 
-    \item Develop on ART, Tableau's homegrown tracing framework for internal use
-    \item Help drive use of error codes for exceptions across the codebase for
-        quicker mean-time-to-resolution of newly introduced defects
     \item Implemented data pipelines to track errors and automatically file
         defects to our bug tracker (in progress)
     \item Developed automation and dashboards in Tableau, Splunk, and New
         Relic to reduce toil and tedious bug investigations
-    \item Improved monitoring on errors in effort to reach three nines
-        of availability for Tableau visualization loads (<99.5\% -> 99.8\%)
   }
   \entry{Research and Development Intern -- Sandia National Laboratories}{06/18 - 08/19}
   {
