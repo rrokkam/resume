@@ -29,7 +29,7 @@
   \rule{\textwidth}{0.4pt}%
   #2
   \end{center}%
-  \vspace{-0.2cm}
+  \vspace{-0.05cm}
 }
 
 
@@ -43,6 +43,7 @@
 }
 
 \newenvironment{cvsection}[1]{%
+  \vspace{-0.15cm}
   \cvsectionheader{#1}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
