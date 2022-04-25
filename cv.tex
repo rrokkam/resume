@@ -5,46 +5,38 @@
 \header{Rohith Rokkam}{
   B.S. Computer Science (Honors) and Mathematics \\
   Stony Brook University, Spring 2019, Summa Cum Laude (GPA: 3.92) \\
-  rohithrokkam@yahoo.com; (516)506-1196; github.com/rrokkam
+  rohithrokkam@yahoo.com; (516) 506-1196; github.com/rrokkam
 }
 
-\begin{cvsection}{Experience}
-  \entry{Software Engineering MTS - Tableau (Salesforce)}{01/20 - Present}
+\begin{cvsection}{Work Experience}
+  \entry{Software Engineering MTS - Salesforce / Tableau Software}{01/20 - Present}
   {
-    \item Enabled embedding of Tableau Prep into Salesforce by allowing clients to track resource usage separately
-    \item Coordinated and led cross-team efforts to remove insecure dependencies from the Tableau Prep dependency tree, and championed system improvements to simplify future security patching
     \item Designed and implemented a rework of the Tableau error-asserting framework to replace frequently misused APIs with hygienic versions and sensible defaults
-    \item Improved performance of the preflight CI pipeline using profiling tools, preventing hangs on large PRs (100+ files) and reducing time taken by over 50\% on small PRs.
-    \item Wrote design documents and technical specifications for an automation tool that automatically detects and triages SLA-impacting defects across the Analytics organization
-    \item Helped client teams debug cross-language performance issues through contributions to Tableau's C++/Java telemetry library
-    \item Set up Snowflake data sources using ETLs written in Apache Flink and Kafka and created Tableau visualizations using those data sources to drive improvements to service observability
-    \item As scrum lead, identified, triaged, and prioritized bugs causing customer-facing errors to drive availability of VizQL Server in Tableau Online from 99.5\% to 99.9\%.
+    \item Improved performance of the preflight CI pipeline using profiling tools, preventing hangs on large PRs and reducing time taken by over 50\% on small PRs
+    \item Coordinated cross-team efforts to remove insecure dependencies from Tableau Prep's Gradle builds
+    \item Added functionality to allow client teams' usage of Tableau Prep to be individually tracked
+    \item Wrote a technical specification for and prototyped a tool that detects and triages SLA-impacting defects for Tableau services using httpd logs
+    \item Set up Snowflake data sources using ETLs written in Apache Flink and Kafka and created Tableau visualizations using those data sources to prioritize improvements to service observability
+    \item As scrum lead, identified, triaged, and prioritized bugs causing customer-facing errors to drive availability of VizQL Server in Tableau Online from 99.5\% to 99.9\%
     \item Unified VizQL Server health checks, removing a class of high-visibility defects in Tableau Public by enabling the server to consistently self-heal
-    \item Found and triaged key sources of customer dissatisfaction in Tableau Online using Tableau and Splunk visualizations tracking metrics including golden signals
-    \item Identified and debugged critical shipblocking production issues using Splunk, Tableau, and New Relic
+    \item Contributed features for Tableau's telemetry/resource tracing library aimed at helping developers debug cross-language performance issues
+    \item Identified, triaged, debugged, and fixed critical shipblocking production defects using Splunk, Tableau, and New Relic
   }
   \entry{Research and Development Intern - Sandia National Laboratories}{06/18 - 08/19}
   {
-    \item Enabled a client team to solve constrained-optimization problems of interest by adding a parallelization layer to a C++ branch-and-bound solver framework.
-    \item Wrote dynamic MPI code suitable for use in high-performance computing scenarios.
-  }
-  \entry{Teaching Assistant - Theory of Computation}{Spring 2018/19}
-  {
-    \item Wrote and graded homework and exams on automata, languages, Turing machines, and complexity
-    \item Lectured the class as a substitute and held regular office hours
+    \item Enabled a client team to solve constrained-optimization problems by implementing a parallelization layer for a C++ branch-and-bound solver framework.
+    \item Wrote dynamic MPI code for high-performance computing scenarios.
   }
 \end{cvsection}
 
 \begin{cvsection}{Selected Projects}
   \entry{Peer-to-peer Filesystem}{}
   {
-    \item Developed an Airdrop-like P2P service in Python using FUSE and a custom protocol
-    \item Made a multithreaded bootstrap server to host the network
+    \item Developed an Airdrop-like P2P network in Python using FUSE, hosted on a multithreaded bootstrap server
   }
   \entry{Packet Sniffer}{}
   {
-    \item Created a packet sniffer using raw network sockets in Python
-    \item Added output filters for protocols including TCP, UDP, IP, Ethernet, and DNS
+    \item Wrote a packet sniffer using raw network sockets in Python and parsed TCP, UDP, IP, Ethernet, and DNS
   }
   \entry{Dynamic Memory Allocator}{}
   {
@@ -52,24 +44,25 @@
   }
   \entry{Bash-like Shell}{}
   {
-    \item Made a shell in C with output redirection, piping, and background job support
-    \item Carefully considered race conditions and handled asynchronous UNIX signals
+    \item Made a shell in C that supports output redirection, piping, signal handling, and background job support
   }
 \end{cvsection}
 
-\begin{cvsection}{Organizations}
+\begin{cvsection}{Other Education}
+  \entry{Teaching Assistant - Theory of Computation}{Spring 2018/19}
+  {
+    \item Wrote and graded homework and exams on automata, languages, Turing machines, and complexity
+    \item Lectured the class as a substitute and held regular office hours
+  }
   \entry{SBU Algorithms Lab}{}
   {
     \item Discussed algorithms, discrete math, and data structures (ex: B-trees, Bloom filters, DFT)
   }
+  \entry{Selected Coursework}{}
+  {
+  \item Graduate: Algorithms (audited Master's and Ph.D. sections), Probability Theory, Algebra
+  \item Undergraduate: Operating Systems, Linear Algebra, Network Programming
+  \item Personal: Category Theory for Programmers, Information Theory
+  }
 \end{cvsection}
-
-\cvsectionheader{Selected Coursework}
-\begin{minipage}{\textwidth}
-  \begin{itemize}[noitemsep,topsep=0pt]%
-    \item Graduate: Algorithms (audited Master's and Ph.D. sections), Probability Theory, Algebra
-    \item Undergraduate: Operating Systems, Linear Algebra, Network Programming
-    \item Personal: Category Theory for Programmers, Information Theory
-  \end{itemize}%
-\end{minipage}%
 \end{document}
