@@ -49,6 +49,10 @@
   \end{tabular*}%
 }
 
+\newcommand{\entryheader}[2]{%
+  \textbf{#1} \hfill \textbf{#2}\\
+}
+
 % need to shift in the entry headers a bit from the lhs of the page
 \newcommand{\entry}[3]{%
   \textbf{#1} \hfill \textbf{#2}\\
