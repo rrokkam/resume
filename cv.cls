@@ -53,12 +53,10 @@
   \textbf{#1} \hfill \textbf{#2}\\
 }
 
-% need to shift in the entry headers a bit from the lhs of the page
-\newcommand{\entry}[3]{%
-  \textbf{#1} \hfill \textbf{#2}\\
+\newcommand{\entry}[1]{%
   \begin{minipage}{\textwidth}
   \begin{itemize}[noitemsep,topsep=0pt]%
-  #3%
+  #1%
   \end{itemize}%
   \end{minipage}%
   \vspace{\parsep}\\
