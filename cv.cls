@@ -3,7 +3,7 @@
 \LoadClass{article}
 
 \pagestyle{empty}
-\RequirePackage[left=2.5cm,top=1.6cm,right=2.5cm,bottom=1.6cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 
 
 % Color
@@ -29,7 +29,6 @@
   \rule{\textwidth}{0.4pt}%
   #2
   \end{center}%
-  \vspace{-0.05cm}
 }
 
 
