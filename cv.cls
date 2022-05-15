@@ -3,7 +3,7 @@
 \LoadClass{article}
 
 \pagestyle{empty}
-\RequirePackage[left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.5cm,top=2cm,right=2.5cm,bottom=2cm,nohead,nofoot]{geometry}
 
 
 % Color
